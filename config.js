@@ -3560,20 +3560,28 @@ module.exports = kconfig = async (kill, message) => {
 			break
 			
 		// Para usar a base remova o /* e o */ e bote um nome dentro das aspas da case e em seguida sua mensagem dentro das aspas na frente do from
-		/*case 'Nome do comando sem espaços':
-			await kill.reply(from, 'Sua mensagem', id)
-			break*/
-			
-			
-        default:
-            if (isCmd) { await kill.reply(from, mess.nocmd(command), id) }
-            break
-			
-			
+      
+      case 'bv':
+      await kill.sendPtt(from, "https://cdn.glitch.com/550c0ba3-b3da-440b-83e7-903364e3ae4b%2Fbv.ogg", id)
+			break
+
+      case 'triste':
+      await kill.sendPtt(from, "https://cdn.glitch.com/550c0ba3-b3da-440b-83e7-903364e3ae4b%2Ftriste.mp3", id); 
+			break
+  
+      case 'puta':
+      await kill.sendPtt(from, "https://cdn.glitch.com/550c0ba3-b3da-440b-83e7-903364e3ae4b%2Fputa.mp3", id); 
+			break
+        
+      default:
+        if (isCmd) {
+          await kill.reply(from, mess.nocmd(command), id);
         }
-    } catch (err) {
-		//await kill.sendText(ownerNumber, mess.wpprpt(command, err))
-		await kill.reply(from, mess.fail(), id)
-        console.log(color('[GERAL]', 'red'), err)
+        break;
     }
-}
+  } catch (err) {
+    //await kill.sendText(ownerNumber, mess.wpprpt(command, err))
+    await kill.reply(from, mess.fail(), id);
+    console.log(color("[GERAL]", "red"), err);
+  }
+};

@@ -35,6 +35,7 @@ const sinesp = require('sinesp-api')
 const { Aki } = require('aki-api')
 const request = require('request')
 const canvas = require('canvacord')
+const ffmpeg = require('fluent-ffmpeg')
 const { spawn, exec, execFile } = require('child_process')
 const nhentai = require('nhentai-js')
 const { API } = require('nhentai-api')
@@ -51,6 +52,7 @@ const deepai = require('deepai')
 const wiki = require("@dada513/wikipedia-search")
 const { EmojiAPI } = require("emoji-api");
 const os = require('os')
+const puppeteer = require('puppeteer')
 const { XVDL } = require("xvdl")
 
 // UTILIDADES

@@ -5,7 +5,7 @@
   "description": "A bot oficial do Horizon!",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon --delay 30 index.js",
     "test": "echo → Para iniciar digite \"npm start\" ou \"node index.js.\"! && exit 1"
   },
   "engines": {

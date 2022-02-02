@@ -9,7 +9,7 @@
     "test": "echo → Para iniciar digite \"npm start\" ou \"node index.js.\"! && exit 1"
   },
   "engines": {
-    "node": "12.x"
+    "node": "16.x"
   },
   "license": "MIT",
   "dependencies": {
